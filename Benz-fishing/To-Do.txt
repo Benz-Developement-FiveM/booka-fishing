@@ -1,7 +1,0 @@
-resize images to 100x100 -Done
-add images -Done
-add items into readme -Done
-add tooltip info in readme -Done
-change ped models in client/peds.lua
-add fish to server/server.lua -Done
-add fish to sell in server/server.lua -Done

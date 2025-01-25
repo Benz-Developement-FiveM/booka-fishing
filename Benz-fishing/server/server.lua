@@ -237,7 +237,80 @@ RegisterNetEvent('fishing:server:catch', function()
 				Player.Functions.AddItem('seaturtle', 1, nil, info, {["quality"] = 100})
 				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['seaturtle'], "add", 1)
 				TriggerClientEvent('QBCore:Notify', src, "You caught a seaturtle!\nThese are endangered species and are illegal to possess", "primary")
-			
+			elseif luck >= 90 and luck <= 95 then
+				local weight = math.random(10,28)
+				local info = {species = "catfish",lbs = weight, type = "Exotic"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 2)
+				Player.Functions.AddItem('catfish', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['catfish'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a catfish!\nThese are endangered species and are illegal to possess", "primary")
+			elseif luck >= 85 and luck <= 90 then
+				local weight = math.random(20,30)
+				local info = {species = "catfish", lbs = weight, type = "Exotic"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 3)
+				Player.Functions.AddItem('catfish2', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['catfish2'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a catfish shark!\nThese are endangered species and are illegal to possess", "primary")
+			elseif luck >= 80 and luck <= 85 then
+				local weight = math.random(1,6)
+				local info = {species = "whale", lbs = weight, type = "Exotic"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 4)
+				Player.Functions.AddItem('whale', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['whale'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a whale!\nThese are endangered species and are illegal to possess", "primary")
+			elseif luck >= 80 and luck <= 85 then
+				local weight = math.random(1,6)
+				local info = {species = "whale", lbs = weight, type = "Exotic"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 4)
+				Player.Functions.AddItem('whale2', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['whale2'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a whale!\nThese are endangered species and are illegal to possess", "primary")
+			elseif luck >= 75 and luck <= 80 then
+				local weight = math.random(4,9)
+				local info = {species = "fish", lbs = weight, type = "Normal"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 5)
+				Player.Functions.AddItem('fish', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['fish'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a fish"..weight.."lbs fish!", "success")
+			elseif luck >= 70 and luck <= 75 then
+				local weight = math.random(10,15)
+				local info = {species = "fish", lbs = weight, type = "Normal"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 6)
+				Player.Functions.AddItem('fish2', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['fish2'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a fish" .. weight .. "lbs fish", "success")
+			elseif luck >= 65 and luck <= 70 then
+				Player.Functions.AddItem('goldfish', 1, nil, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['goldfish'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a goldfish!" .. weight .. "lbs goldfish", "success")
+			elseif luck >= 60 and luck <= 65 then
+				local weight = math.random(1,6)
+				local info = {species = "largemouthbass", lbs = weight, type = "Normal"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 6)
+				Player.Functions.AddItem('largemouthbass', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['largemouthbass'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a largemouthbass" .. weight .. "lbs largemouthbass", "success")
+			elseif luck >= 60 and luck <= 65 then
+				local weight = math.random(1,6)
+				local info = {species = "redfish", lbs = weight, type = "Normal"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 6)
+				Player.Functions.AddItem('redfish', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['redfish'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a redfish" .. weight .. "lbs redfish", "success")
+			elseif luck >= 60 and luck <= 65 then
+				local weight = math.random(1,6)
+				local info = {species = "salmon", lbs = weight, type = "Normal"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 6)
+				Player.Functions.AddItem('salmon', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['salmon'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a salmon" .. weight .. "lbs salmon", "success")
+			elseif luck >= 60 and luck <= 65 then
+				local weight = math.random(1,6)
+				local info = {species = "stripedbass", lbs = weight, type = "Normal"}
+				--TriggerClientEvent('fishing:client:spawnFish', src, 6)
+				Player.Functions.AddItem('stripedbass', 1, nil, info, {["quality"] = 100})
+				TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['stripedbass'], "add", 1)
+				TriggerClientEvent('QBCore:Notify', src, "You caught a stripedbass" .. weight .. "lbs stripedbass", "success")
             end
             Citizen.Wait(500)
         end
@@ -308,6 +381,55 @@ RegisterNetEvent('fishing:server:SellillegalFish', function(args)
 		else
 			TriggerClientEvent('QBCore:Notify', src, "You dont have any seahorses to sell", 'error')
 		end
+	elseif args == 6 then 
+		local catfish = Player.Functions.GetItemByName("catfish")
+		if catfish ~= nil then
+			local payment = Config.catfishPrice
+			Player.Functions.RemoveItem("catfish", 1, k)
+			Player.Functions.AddMoney('bank', payment , "catfish-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['catfish'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "catfish Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellillegalFish", source)
+		else
+			TriggerClientEvent('QBCore:Notify', src, "You dont have any catfish to sell", 'error')
+		end
+	elseif args == 7 then 
+		local catfish2 = Player.Functions.GetItemByName("catfish2")
+		if catfish2 ~= nil then
+			local payment = Config.catfish2Price
+			Player.Functions.RemoveItem("catfish2", 1, k)
+			Player.Functions.AddMoney('bank', payment , "catfish2-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['catfish2'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "catfish Shark Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellillegalFish", source)
+		else
+			TriggerClientEvent('QBCore:Notify', src, "You dont have any catfish Sharks to sell", 'error')
+		end
+	elseif args == 8 then 
+		local whale = Player.Functions.GetItemByName("whale")
+		if whale ~= nil then
+			local payment = Config.whalePrice
+			Player.Functions.RemoveItem("whale", 1, k)
+			Player.Functions.AddMoney('bank', payment , "whale-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['whale'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "whale Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellillegalFish", source)
+		else
+			TriggerClientEvent('QBCore:Notify', src, "You dont have any whales to sell", "error")
+		end
+	elseif args == 9 then 
+		local whale2 = Player.Functions.GetItemByName("whale2")
+		if whale2 ~= nil then
+			local payment = Config.whale2Price
+			Player.Functions.RemoveItem("whale2", 1, k)
+			Player.Functions.AddMoney('bank', payment , "whale2-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['whale2'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "whale Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellillegalFish", source)
+		else
+			TriggerClientEvent('QBCore:Notify', src, "You dont have any whales to sell", 'error')
+		end
+
 	else 
 		local seaturtle = Player.Functions.GetItemByName("seaturtle")
 		if seaturtle ~= nil then
@@ -386,7 +508,8 @@ RegisterNetEvent('fishing:server:SellLegalFish', function(args)
 			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
 		else
 		    TriggerClientEvent('QBCore:Notify', src, "You dont have any Stingray to sell", "error")
-		end	if args == 1 then 
+		end	
+	elseif args == 6 then 
 		local bluegill = Player.Functions.GetItemByName("bluegill")
 		if bluegill ~= nil then
 			local payment = Config.bluegillPrice
@@ -398,7 +521,7 @@ RegisterNetEvent('fishing:server:SellLegalFish', function(args)
 		else
 			TriggerClientEvent('QBCore:Notify', src, "You dont have any bluegills to sell", "error")
 		end
-	elseif args == 6 then
+	elseif args == 7 then
 		local butterflyfish = Player.Functions.GetItemByName("butterflyfish")
 		if butterflyfish ~= nil then
 			local payment = Config.butterflyfishPrice
@@ -410,7 +533,7 @@ RegisterNetEvent('fishing:server:SellLegalFish', function(args)
 		else
 			TriggerClientEvent('QBCore:Notify', src, "You dont have any butterflyfish to sell", "error")
 		end
-	elseif args == 7 then
+	elseif args == 8 then
 		local clownfish = Player.Functions.GetItemByName("clownfish") 
 		if clownfish ~= nil then
 			local payment = Config.clownfishPrice
@@ -422,7 +545,7 @@ RegisterNetEvent('fishing:server:SellLegalFish', function(args)
 		else
 			TriggerClientEvent('QBCore:Notify', src, "You dont have any clownfish to sell", "error")
 		end
-	elseif args == 8 then
+	elseif args == 9 then
 		local Northern_Pike = Player.Functions.GetItemByName("Northern_Pike")
 		if Northern_Pike ~= nil then
 			local payment = Config.Northern_PikePrice
@@ -434,7 +557,7 @@ RegisterNetEvent('fishing:server:SellLegalFish', function(args)
 		else
 			TriggerClientEvent('QBCore:Notify', src, "You dont have any Northern Pikes to sell", "error")
 		end
-	elseif args == 9 then
+	elseif args == 10 then
 		local oceanfish = Player.Functions.GetItemByName("oceanfish")
 		if oceanfish ~= nil then
 			local payment = Config.oceanfishPrice
@@ -445,6 +568,90 @@ RegisterNetEvent('fishing:server:SellLegalFish', function(args)
 			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
 		else
 			TriggerClientEvent('QBCore:Notify', src, "You dont have any oceanfish to sell", "error")
+		end
+	elseif args == 11 then
+		local fish = Player.Functions.GetItemByName("fish")
+		if fish ~= nil then
+			local payment = Config.fishPrice
+			Player.Functions.RemoveItem("fish", 1, k)
+			Player.Functions.AddMoney('bank', payment , "fish-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['fish'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "1 fish Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
+		else
+		    TriggerClientEvent('QBCore:Notify', src, "You dont have any fish to sell", "error")
+		end
+	elseif args == 12 then
+		local fish2 = Player.Functions.GetItemByName("fish2") 
+		if fish2 ~= nil then
+			local payment = Config.fish2Price
+			Player.Functions.RemoveItem("fish2", 1, k)
+			Player.Functions.AddMoney('bank', payment , "fish2-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['fish2'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "1 fish Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
+		else
+			TriggerClientEvent('QBCore:Notify', src, "You dont have any fish to sell", "error")
+		end
+	elseif args == 13 then
+		local goldfish = Player.Functions.GetItemByName("goldfish")
+		if goldfish ~= nil then
+			local payment = Config.goldfishPrice
+			Player.Functions.RemoveItem("goldfish", 1, k)
+			Player.Functions.AddMoney('bank', payment , "goldfish-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['goldfish'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "1 goldfish Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
+		else
+		    TriggerClientEvent('QBCore:Notify', src, "You dont have any goldfish to sell", "error")
+		end
+	elseif args == 14 then
+		local largemouthbass = Player.Functions.GetItemByName("largemouthbass")
+		if largemouthbass ~= nil then
+			local payment = Config.largemouthbassPrice
+			Player.Functions.RemoveItem("largemouthbass", 1, k)
+			Player.Functions.AddMoney('bank', payment , "largemouthbass-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['largemouthbass'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "1 largemouthbass Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
+		else
+		    TriggerClientEvent('QBCore:Notify', src, "You dont have any largemouthbass to sell", "error")
+		end	
+	elseif args == 15 then 
+		local redfish = Player.Functions.GetItemByName("redfish")
+		if redfish ~= nil then
+			local payment = Config.redfishPrice
+			Player.Functions.RemoveItem("redfish", 1, k)
+			Player.Functions.AddMoney('bank', payment , "redfish-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['redfish'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "1 redfish Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
+		else
+			TriggerClientEvent('QBCore:Notify', src, "You dont have any redfish to sell", "error")
+		end
+	elseif args == 16 then
+		local salmon = Player.Functions.GetItemByName("salmon")
+		if salmon ~= nil then
+			local payment = Config.salmonPrice
+			Player.Functions.RemoveItem("salmon", 1, k)
+			Player.Functions.AddMoney('bank', payment , "salmon-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['salmon'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "1 salmon Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
+		else
+			TriggerClientEvent('QBCore:Notify', src, "You dont have any salmon to sell", "error")
+		end
+	elseif args == 17 then
+		local stripedbass = Player.Functions.GetItemByName("stripedbass")
+		if stripedbass ~= nil then
+			local payment = Config.stripedbassPrice
+			Player.Functions.RemoveItem("stripedbass", 1, k)
+			Player.Functions.AddMoney('bank', payment , "stripedbass-sell")
+			TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items['stripedbass'], "remove", 1)
+			TriggerClientEvent('QBCore:Notify', src, "1 stripedbass Sold for $"..payment, "success")
+			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
+		else
+			TriggerClientEvent('QBCore:Notify', src, "You dont have any stripedbass to sell", "error")
 		end
 	else
 		local parrotfish = Player.Functions.GetItemByName("parrotfish")
@@ -457,7 +664,7 @@ RegisterNetEvent('fishing:server:SellLegalFish', function(args)
 			TriggerClientEvent("bookafishing:client:SellLegalFish", source)
 		else
 			TriggerClientEvent('QBCore:Notify', src, "You dont have any parrotfish to sell", "error")
-		end
+		end		
 	end
 end)
 
